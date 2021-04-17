@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="myForm">
+     <div class="s">
+         <img src="piros.png" class="potty" alt="">
+         <img src="piros.png"  alt="">
+         <img src="szurke.png" class="potty" alt="">
+         <img src="szurke.png" alt="">
+         <img src="pluszjel.png" alt="">
+         <img src="vonal.png" alt="">
+         <img src="egyenlo.png" alt="">
+         <img src="kek.png" class="kek" alt="">
+         <img src="kek.png"  alt="">
+         <button onclick="myFunction(1)" value="Reset form">Alap</button>
+         <button onclick="myFunction()">Megoldás</button>
+
+         <p> Eredmény: <p id="valami"></p> </p>
+     </div>
+    </form>
+
+     <script>
+         var x = 11;
+            var y = 22;
+            var z = x + x + y + y;
+        function myFunction() {
+            document.getElementById("valami").innerHTML = z;
+            document.getElementById("myForm").reset();
+        }
+
+     </script>
+
+     <!--Csak igy tudtam megoldani a reset dolgot.-->
+</body>
+</html>
